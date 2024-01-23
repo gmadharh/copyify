@@ -7,6 +7,7 @@ chrome.runtime.onMessage.addListener((message /*, sender, sendResponse*/) => {
           target: {
             tabId: tab[0]?.id ?? 0,
           },
+
           files: ['script.ts'],
         })
         .then(() => console.log('script injected'))

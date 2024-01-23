@@ -7,6 +7,10 @@
   },
 
   "permissions": ["tabs", "scripting", "nativeMessaging", "activeTab"],
+  "host_permissions": [
+    "http://open.spotify.com/track/*",
+    "https://open.spotify.com/track/*"
+  ],
   "content_scripts": [
     {
       "matches": [
