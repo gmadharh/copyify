@@ -1,5 +1,3 @@
-export default async function run() {
-  const songTitle = document.querySelector('.main-view-container')
-
-  console.log(songTitle)
+export default function run() {
+  console.log('printing length: ', document.querySelectorAll('h3').length)
 }

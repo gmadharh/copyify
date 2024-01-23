@@ -5,14 +5,19 @@
   "action": {
     "default_popup": "index.html"
   },
-  "permissions": ["scripting"],
+  "permissions": ["scripting", "nativeMessaging", "activeTab"],
   "content_scripts": [
     {
       "matches": [
         "http://open.spotify.com/track/*",
         "https://open.spotify.com/track/*"
       ],
-      "js": ["src/script.ts"]
+      "js": ["src/script.ts"],
+      "run_at": "document_end"
     }
-  ]
+  ],
+  "background": {
+    "service_worker": "src/service-worker.ts",
+    "type": "module"
+  }
 }
