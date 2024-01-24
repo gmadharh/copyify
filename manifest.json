@@ -8,7 +8,7 @@
     "service_worker": "src/background.ts",
     "type": "module"
   },
-  "browser_action": {
+  "action": {
     "default_popup": "src/popup.html"
   },
   "content_scripts": [
