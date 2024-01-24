@@ -4,8 +4,18 @@
 
   "version": "1.0",
   "description": "A simple Chrome extension written in TypeScript",
-  "browser_action": {
-    "default_popup": "popup.html"
+  "background": {
+    "service_worker": "src/background.ts",
+    "type": "module"
   },
-  "permissions": ["activeTab"]
+  "browser_action": {
+    "default_popup": "src/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/script.ts"]
+    }
+  ],
+  "permissions": ["scripting", "activeTab"]
 }
