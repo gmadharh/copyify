@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Spotify Song Extractor",
+
+  "version": "1.0",
+  "description": "A simple Chrome extension written in TypeScript",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab"]
+}
