@@ -1,4 +1,12 @@
-chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+chrome.runtime.onMessage.addListener(async function (
+  request,
+  sender,
+  sendResponse
+) {
   console.log('recieved from sender: ', sender)
-  if (request.greeting === 'hello') sendResponse({ farewell: 'goodbye' })
+  let [tab] = await chrome.tabs.query({ active: true, lastFocusedWindow: true })
+  chrome.scripting.executeScript({
+    target: { tabId: tab.id ?? 0 },
+    files: ['script.a86d90b9.js'],
+  })
 })
