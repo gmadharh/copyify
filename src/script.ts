@@ -1,11 +1,7 @@
 console.log('executing script')
-type Track = {
-  songName?: string
-  artist?: string
-  albumName?: string
-}
+import { Track } from './types.js'
 
-const track: Track = {}
+const track: Track = { songName: '', artist: '', albumName: '' }
 
 const observer = new MutationObserver(function (mutations, mutationInstance) {
   const songName = document.querySelector('.encore-text-headline-large')
