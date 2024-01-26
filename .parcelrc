@@ -5,6 +5,7 @@
   ],
   "reporters": [
     "...",
-    "parcel-reporter-clean-dist"
+    "parcel-reporter-clean-dist",
+    "parcel-reporter-static-files-copy"
   ]
 }
