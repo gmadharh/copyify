@@ -1,1 +1,1 @@
-console.log('executing script.js')
+console.log('executing script')

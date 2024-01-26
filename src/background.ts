@@ -7,6 +7,6 @@ chrome.runtime.onMessage.addListener(async function (
   let [tab] = await chrome.tabs.query({ active: true, lastFocusedWindow: true })
   chrome.scripting.executeScript({
     target: { tabId: tab.id ?? 0 },
-    files: ['script.a86d90b9.js'],
+    files: ['script.js'],
   })
 })

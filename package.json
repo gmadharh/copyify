@@ -5,8 +5,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean:output": "rimraf dist",
-    "dev": "npm run clean:output && parcel watch manifest.json --host localhost --config @parcel/config-webextension",
-    "build": "npm run clean:output && parcel build manifest.json --no-content-hash --config @parcel/config-webextension"
+    "dev": "npm run clean:output && parcel watch manifest.json --host localhost",
+    "build": "npm run clean:output && parcel build manifest.json"
+  },
+  "parcel-namer-hashless": {
+    "include": [
+      "script[.]js$"
+    ],
+    "mode": "all"
   },
   "type": "module",
   "keywords": [],
@@ -16,7 +22,11 @@
     "@parcel/config-webextension": "^2.11.0",
     "@types/chrome": "^0.0.258",
     "parcel": "^2.11.0",
+    "parcel-namer-hashless": "^1.0.6",
     "rimraf": "^5.0.5",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "parcel-namer-rewrite": "^2.10.3-rc.2"
   }
 }
