@@ -27,6 +27,8 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "parcel-namer-rewrite": "^2.10.3-rc.2"
+    "@parcel/transformer-vue": "^2.11.0",
+    "parcel-namer-rewrite": "^2.10.3-rc.2",
+    "vue": "^3.4.15"
   }
 }

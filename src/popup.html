@@ -11,12 +11,11 @@
     <h1>Spotify Track Info</h1>
     <div class="song-info">
       <h3>Song Name</h3>
-      <input type="text" id="song-name-text" readonly />
+      <input type="text" id="song-name-text" :value="song" readonly />
       <h3>Artist</h3>
-
-      <input type="text" id="artist-text" readonly />
+      <input type="text" id="artist-text" :value="artist" readonly />
       <h3>Album</h3>
-      <input type="text" id="album-text" readonly />
+      <input type="text" id="album-text" :value="album" readonly />
     </div>
   </body>
 </html>
