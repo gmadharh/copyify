@@ -2,5 +2,9 @@
   "extends": "@parcel/config-webextension",
   "namers": [
     "parcel-namer-hashless"
+  ],
+  "reporters": [
+    "...",
+    "parcel-reporter-clean-dist"
   ]
 }
