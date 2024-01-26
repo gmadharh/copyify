@@ -17,7 +17,9 @@
         "http://open.spotify.com/track/*",
         "https://open.spotify.com/track/*"
       ],
-      "js": ["src/script.ts"]
+      "js": ["src/script.ts"],
+      "all_frames": true,
+      "run_at": "document_start"
     }
   ],
   "permissions": ["scripting", "activeTab", "tabs", "nativeMessaging"]

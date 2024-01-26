@@ -23,6 +23,8 @@ const observer = new MutationObserver(function (mutations, mutationInstance) {
 
     console.log(track)
     mutationInstance.disconnect()
+
+    chrome.runtime.sendMessage({ action: 'track', info: track })
   }
 })
 
