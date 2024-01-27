@@ -6,7 +6,12 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import TrackInfo from './TrackInfo.vue'
+import { Track } from '../types'
 export default defineComponent({
+  components: {
+    TrackInfo,
+  },
   data() {
     return {
       song: '',
@@ -16,7 +21,7 @@ export default defineComponent({
   },
   mounted() {
     chrome.runtime.onMessage.addListener(
-      (request: { action: string; info: Track }, sender, sendResponse) => {
+      (request: { action: string; info: Track } /*sender, sendResponse*/) => {
         if (request.action === 'track') {
           console.log('index.ts recieved track', request.info)
           this.song = request.info.songName
