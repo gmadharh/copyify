@@ -20,6 +20,7 @@
   "devDependencies": {
     "@parcel/config-webextension": "^2.11.0",
     "@types/chrome": "^0.0.258",
+    "@types/vue": "^2.0.0",
     "parcel": "^2.11.0",
     "parcel-namer-hashless": "^1.0.6",
     "parcel-reporter-clean-dist": "^1.0.4",
