@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, onUpdated } from 'vue'
 import TrackInfo from './TrackInfo.vue'
 import { Track } from '../types.js'
 export default defineComponent({
