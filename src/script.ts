@@ -18,9 +18,17 @@ const observer = new MutationObserver(function (mutations, mutationInstance) {
     // track info gets displayed in popup html
 
     console.log(track)
-    mutationInstance.disconnect()
 
     chrome.runtime.sendMessage({ action: 'track', info: track })
+
+    for (const key in track) {
+      chrome.storage.local
+        .set({ [key]: track[key as keyof Track] })
+        .then(() => {
+          console.log('track is setting ', key, track[key as keyof Track])
+        })
+    }
+    mutationInstance.disconnect()
   }
 })
 
