@@ -26,24 +26,10 @@ export default defineComponent({
   },
   mounted() {
     this.getTrackFromStorage().then((result) => {
-      console.log('result of promies: ', result)
       this.song = result.songName
       this.artist = result.artist
       this.album = result.albumName
     })
-
-    //chrome.runtime.onMessage.addListener(
-    //(request: { action: string; info: Track } /*sender, sendResponse*/) => {
-    //if (request.action === 'track') {
-    //console.log('index.ts recieved track', request.info)
-    //this.song = request.info.songName
-
-    //this.artist = request.info.artist
-
-    //this.album = request.info.albumName
-    //}
-    //}
-    //)
   },
 })
 </script>

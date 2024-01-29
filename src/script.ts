@@ -1,4 +1,3 @@
-console.log('executing script')
 import { Track } from './types.js'
 
 const track: Track = { songName: '', artist: '', albumName: '' }
@@ -17,16 +16,10 @@ const observer = new MutationObserver(function (mutations, mutationInstance) {
     // background sends message to index.ts with track info
     // track info gets displayed in popup html
 
-    console.log(track)
-
-    chrome.runtime.sendMessage({ action: 'track', info: track })
-
     for (const key in track) {
       chrome.storage.local
         .set({ [key]: track[key as keyof Track] })
-        .then(() => {
-          console.log('track is setting ', key, track[key as keyof Track])
-        })
+        .then(() => {})
     }
     mutationInstance.disconnect()
   }
