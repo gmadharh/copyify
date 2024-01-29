@@ -11,6 +11,10 @@
   "action": {
     "default_popup": "src/popup.html"
   },
+  "host_permissions": [
+    "http://open.spotify.com/track/*",
+    "https://open.spotify.com/track/*"
+  ],
   "content_scripts": [
     {
       "matches": [
@@ -27,6 +31,7 @@
     "scripting",
     "activeTab",
     "tabs",
+    "webNavigation",
     "nativeMessaging"
   ]
 }
