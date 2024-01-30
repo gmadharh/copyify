@@ -1,7 +1,10 @@
 <template>
   <TrackInfo heading="Song Name" :value="song" />
-  <TrackInfo Info heading="Artist" :value="artist" />
+  <button @click="copyToClickboard(song)">Copy</button>
+  <TrackInfo heading="Artist" :value="artist" />
+  <button @click="copyToClickboard(artist)">Copy</button>
   <TrackInfo heading="Album" :value="album" />
+  <button @click="copyToClickboard(album)">Copy</button>
 </template>
 
 <script lang="ts">
@@ -23,9 +26,14 @@ export default defineComponent({
     async getTrackFromStorage() {
       return await chrome.storage.local.get(['songName', 'artist', 'albumName'])
     },
+    copyToClickboard(text: string) {
+      navigator.clipboard.writeText(text).catch((error) => {
+        console.log('error copying: ', error)
+      })
+    },
   },
   mounted() {
-    this.getTrackFromStorage().then((result) => {
+    this.getTrackFromStorage().then((result: Track) => {
       this.song = result.songName
       this.artist = result.artist
       this.album = result.albumName
@@ -33,3 +41,5 @@ export default defineComponent({
   },
 })
 </script>
+
+<style></style>

@@ -3,7 +3,7 @@
   "name": "Spotify Song Extractor",
 
   "version": "1.0",
-  "description": "A simple Chrome extension written in TypeScript",
+  "description": "Easily copy and paste the song title, album, or artist from the Spotify track webpage",
   "icons": {
     "128": "./src/assets/icon.png"
   },
