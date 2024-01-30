@@ -4,6 +4,9 @@
 
   "version": "1.0",
   "description": "A simple Chrome extension written in TypeScript",
+  "icons": {
+    "128": "./src/assets/icon.png"
+  },
   "background": {
     "service_worker": "src/background.ts",
     "type": "module"
