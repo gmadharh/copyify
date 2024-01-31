@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row class="align-center font">
+    <v-row class="align-center">
       <v-col>
         <TrackInfo heading="Song Name" :value="song" />
       </v-col>

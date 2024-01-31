@@ -2,13 +2,16 @@ import { createApp } from 'vue'
 import App from './components/App.vue'
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
-import { VBtn, VTextarea } from 'vuetify/components'
+import { VBtn, VTextField, VRow, VCol, VContainer } from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 
 const vuetify = createVuetify({
   components: {
     VBtn,
-    VTextarea,
+    VTextField,
+    VRow,
+    VCol,
+    VContainer,
   },
   directives,
 })
