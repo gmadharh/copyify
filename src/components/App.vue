@@ -1,30 +1,10 @@
 <template>
-  <v-container>
-    <v-row class="align-center">
-      <v-col>
-        <TrackInfo heading="Song Name" :value="song" />
-      </v-col>
-      <v-col>
-        <v-btn @click="copyToClickboard(song)">Copy</v-btn>
-      </v-col>
-    </v-row>
-    <v-row class="align-center">
-      <v-col>
-        <TrackInfo heading="Artist" :value="artist" />
-      </v-col>
-      <v-col>
-        <v-btn @click="copyToClickboard(artist)">Copy</v-btn>
-      </v-col>
-    </v-row>
-    <v-row class="align-center">
-      <v-col>
-        <TrackInfo heading="Album" :value="album" />
-      </v-col>
-      <v-col>
-        <v-btn @click="copyToClickboard(album)">Copy</v-btn>
-      </v-col>
-    </v-row>
-  </v-container>
+  <TrackInfo heading="Song Name" :value="song" />
+  <button @click="copyToClickboard(song)">Copy</button>
+  <TrackInfo heading="Artist" :value="artist" />
+  <button @click="copyToClickboard(artist)">Copy</button>
+  <TrackInfo heading="Album" :value="album" />
+  <button @click="copyToClickboard(album)">Copy</button>
 </template>
 
 <script lang="ts">

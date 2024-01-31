@@ -35,7 +35,6 @@
   "dependencies": {
     "@parcel/transformer-vue": "^2.11.0",
     "parcel-namer-rewrite": "^2.10.3-rc.2",
-    "vue": "^3.4.15",
-    "vuetify": "^3.5.1"
+    "vue": "^3.4.15"
   }
 }
