@@ -1,6 +1,12 @@
 <template>
   <h3>{{ heading }}</h3>
-  <input type="text" :value="value" readonly />
+  <v-text-field
+    type="text"
+    style="color: #743daf"
+    variant="outlined"
+    :value="value"
+    readonly
+  />
 </template>
 
 <script>
