@@ -7,7 +7,7 @@ This is because it doesn't allow you to highlight any text with the cursor, so t
 
 ## Screenshots
 
-<img width="623" alt="Screenshot 2024-01-30 114410" src="https://github.com/gmadharh/spotify-song-extractor/assets/58638508/26bc6c57-34de-40c6-8f81-daf6d4299770">
+<img width="595" alt="Screenshot 2024-01-30 193658" src="https://github.com/gmadharh/spotify-song-extractor/assets/58638508/7d729c22-1deb-4cf3-b28e-4ae4bc18b485">
 
 ## Tools Used
 
