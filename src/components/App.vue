@@ -1,23 +1,22 @@
 <template>
-  <TrackInfo heading="Song Name" :value="song" />
-  <button
-    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-    @click="copyToClickboard(song)"
-  >
-    Copy
-  </button>
-  <TrackInfo heading="Artist" :value="artist" />
-  <button @click="copyToClickboard(artist)">Copy</button>
-  <TrackInfo heading="Album" :value="album" />
-  <button @click="copyToClickboard(album)">Copy</button>
+  <div class="grid gap-4 grid-cols-2 grid-rows-3 items-center justify-center">
+    <TrackInfo heading="Song Name" :value="song" />
+    <CopyButton @copy="copyToClickboard(song)" />
+    <TrackInfo heading="Artist" :value="artist" />
+    <CopyButton @copy="copyToClickboard(artist)" />
+    <TrackInfo heading="Album" :value="album" />
+    <CopyButton @copy="copyToClickboard(album)" />
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 import TrackInfo from './TrackInfo.vue'
+import CopyButton from './CopyButton.vue'
 export default defineComponent({
   components: {
     TrackInfo,
+    CopyButton,
   },
   data() {
     return {
