@@ -1,38 +1,22 @@
 <template>
-  <v-container>
-    <v-row class="align-center">
-      <v-col>
-        <TrackInfo heading="Song Name" :value="song" />
-      </v-col>
-      <v-col>
-        <v-btn @click="copyToClickboard(song)">Copy</v-btn>
-      </v-col>
-    </v-row>
-    <v-row class="align-center">
-      <v-col>
-        <TrackInfo heading="Artist" :value="artist" />
-      </v-col>
-      <v-col>
-        <v-btn @click="copyToClickboard(artist)">Copy</v-btn>
-      </v-col>
-    </v-row>
-    <v-row class="align-center">
-      <v-col>
-        <TrackInfo heading="Album" :value="album" />
-      </v-col>
-      <v-col>
-        <v-btn @click="copyToClickboard(album)">Copy</v-btn>
-      </v-col>
-    </v-row>
-  </v-container>
+  <div class="grid gap-4 grid-cols-2 grid-rows-3 items-center justify-center">
+    <TrackInfo heading="Song Name" :value="song" />
+    <CopyButton @copy="copyToClickboard(song)" />
+    <TrackInfo heading="Artist" :value="artist" />
+    <CopyButton @copy="copyToClickboard(artist)" />
+    <TrackInfo heading="Album" :value="album" />
+    <CopyButton @copy="copyToClickboard(album)" />
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 import TrackInfo from './TrackInfo.vue'
+import CopyButton from './CopyButton.vue'
 export default defineComponent({
   components: {
     TrackInfo,
+    CopyButton,
   },
   data() {
     return {
