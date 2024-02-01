@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  font-family: 'Roboto', sans-serif;
   width: 300px;
   height: 280px;
   background-color: #317773;
