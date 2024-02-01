@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col">
+  <div class="flex flex-col justify-center items-center">
     <h3 class="text-base font-lora">{{ heading }}</h3>
     <input
       type="text"
