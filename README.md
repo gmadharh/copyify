@@ -11,6 +11,18 @@ This is because it doesn't allow you to highlight any text with the cursor, so t
 
 <img width="638" alt="image" src="https://github.com/gmadharh/spotify-song-extractor/assets/58638508/e44c2943-3497-416e-88db-66937a09b51d">
 
+## Changelog
+
+### v1.1 (WIP)
+
+- Added Tailwind for styling the components
+- Updated UI to look nicer
+
+### v1.0 
+
+Initial Release
+
+
 ## Tools Used
 
 Typescript, Vue.js, Parcel
