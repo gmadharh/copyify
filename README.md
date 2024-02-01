@@ -25,6 +25,6 @@ Initial Release
 
 ## Tools Used
 
-Typescript, Vue.js, Parcel
+Typescript, Vue.js, Tailwind, Parcel
 
 
