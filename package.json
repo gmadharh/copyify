@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel watch manifest.json --host localhost",
+    "dev": "parcel watch --host localhost",
     "build": "parcel build"
   },
   "source": [
