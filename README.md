@@ -17,6 +17,8 @@ This is because it doesn't allow you to highlight any text with the cursor, so t
 
 - Added Tailwind for styling the components
 - Updated UI to look nicer
+- Removed `tabs` permission, opting in for `activeTab`
+- Remove `content_scripts` field in manifest, executing script programatically using `scripting`
 
 ### v1.0 
 
