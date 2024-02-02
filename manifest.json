@@ -18,5 +18,5 @@
     "http://open.spotify.com/track/*",
     "https://open.spotify.com/track/*"
   ],
-  "permissions": ["storage", "scripting", "activeTab", "tabs"]
+  "permissions": ["storage", "scripting", "activeTab"]
 }
