@@ -13,7 +13,7 @@ This is because it doesn't allow you to highlight any text with the cursor, so t
 
 ## Changelog
 
-### v1.1 (WIP)
+### v1.1
 
 - Added Tailwind for styling the components
 - Updated UI to look nicer
