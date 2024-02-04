@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Copyify",
 
-  "version": "1.1",
+  "version": "1.2",
   "description": "Easily copy and paste the song title, album, or artist from the Spotify track webpage",
   "icons": {
     "128": "./src/assets/icon.png"
