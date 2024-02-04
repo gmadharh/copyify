@@ -13,6 +13,10 @@ This is because it doesn't allow you to highlight any text with the cursor, so t
 
 ## Changelog
 
+### v1.2 (TBR)
+
+- Changed name of extension to Copyify (so much better)
+
 ### v1.1
 
 - Added Tailwind for styling the components
