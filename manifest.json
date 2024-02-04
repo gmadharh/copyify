@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Spotify Song Extractor",
+  "name": "Copyify",
 
   "version": "1.1",
   "description": "Easily copy and paste the song title, album, or artist from the Spotify track webpage",
