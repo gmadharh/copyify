@@ -13,7 +13,7 @@ This is because it doesn't allow you to highlight any text with the cursor, so t
 
 ## Changelog
 
-### v1.2 (TBR)
+### v1.2 
 
 - Changed name of extension to Copyify (so much better)
 
