@@ -4,6 +4,7 @@ export default {
   theme: {
     fontFamily: {
       lora: ['Lora', 'serif'],
+      'source-sans': ["'Source Sans 3'", 'sans-serif'],
     },
     extend: {
       colors: {

@@ -1,11 +1,12 @@
 <template>
-  <div class="flex flex-col justify-center items-center">
+  <div class="flex flex-row justify-center items-center pb-3">
     <input
       type="text"
-      class="border-2 border-gray-300 focus:outline-none focus:border-blue-500 rounded-md p-2"
+      class="text-white font-source-sans text-base focus:outline-none bg-transparent rounded-md p-2 mr-2"
       :value="value"
       readonly
     />
+    <button class="bg-blue-200 mr-1">Copy</button>
   </div>
 </template>
 

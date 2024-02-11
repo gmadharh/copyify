@@ -1,9 +1,15 @@
 <template>
   <div
-    class="flex flex-grow-0 border border-green-400 h-screen w-1/2 content-center justify-center"
+    class="flex flex-row border border-green-400 content-center justify-center"
   >
-    <div class="self-center">
+    <div class="self-center w-screen h-full m-1">
       <img :src="image" width="150px" height="150px" alt="Song Image" />
+    </div>
+
+    <div class="border border-l-purple-700 self-center h-full w-screen">
+      <TrackInfo :value="song" />
+      <TrackInfo :value="artist" />
+      <TrackInfo :value="album" />
     </div>
   </div>
 </template>
