@@ -9,6 +9,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
       tab.url?.startsWith('https://open.spotify.com/track/'))
   ) {
     // Execute script to scrape song data if on a track webpage
+    console.log('executing script')
     chrome.scripting.executeScript({
       target: { tabId: tabId },
       files: ['src/script.js'],
