@@ -1,6 +1,6 @@
 <template>
   <div class="flex h-screen items-center">
-    <div class="flex flex-row border content-center justify-center">
+    <div class="flex flex-row content-center justify-center">
       <div class="self-center m-1">
         <img :src="image" width="150px" height="150px" alt="Song Image" />
       </div>
@@ -16,10 +16,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+
+import { Icon } from '@iconify/vue'
 import TrackInfo from './TrackInfo.vue'
 export default defineComponent({
   components: {
     TrackInfo,
+    Icon,
   },
   data() {
     return {
