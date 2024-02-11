@@ -5,7 +5,12 @@ export default {
     fontFamily: {
       lora: ['Lora', 'serif'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        darkStart: '#0d0d0d',
+        darkEnd: '#121212',
+      },
+    },
   },
   plugins: [],
 }

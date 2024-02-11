@@ -18,12 +18,18 @@ export default defineComponent({
       song: '',
       artist: '',
       album: '',
+      image: '',
     }
   },
   methods: {
     // Get the song name, artist and album which have been stored locally after being scraped
     async getTrackFromStorage() {
-      return await chrome.storage.local.get(['songName', 'artist', 'albumName'])
+      return await chrome.storage.local.get([
+        'songName',
+        'artist',
+        'albumName',
+        'image',
+      ])
     },
 
     // copy field to clipboard
@@ -43,6 +49,7 @@ export default defineComponent({
       this.song = result.songName
       this.artist = result.artist
       this.album = result.albumName
+      this.image = result.image
     })
   },
 })
