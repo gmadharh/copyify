@@ -1,10 +1,10 @@
 <template>
   <div class="grid gap-4 grid-cols-2 grid-rows-3 items-center justify-center">
-    <TrackInfo heading="Song Name" :value="song" />
+    <TrackInfo :value="song" />
     <CopyButton @copy="copyToClickboard(song)" />
-    <TrackInfo heading="Artist" :value="artist" />
+    <TrackInfo :value="artist" />
     <CopyButton @copy="copyToClickboard(artist)" />
-    <TrackInfo heading="Album" :value="album" />
+    <TrackInfo :value="album" />
     <CopyButton @copy="copyToClickboard(album)" />
   </div>
 </template>
