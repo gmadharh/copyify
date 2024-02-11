@@ -1,41 +1,46 @@
 <template>
-  <div class="grid gap-4 grid-cols-2 grid-rows-3 items-center justify-center">
-    <TrackInfo heading="Song Name" :value="song" />
-    <CopyButton @copy="copyToClickboard(song)" />
-    <TrackInfo heading="Artist" :value="artist" />
-    <CopyButton @copy="copyToClickboard(artist)" />
-    <TrackInfo heading="Album" :value="album" />
-    <CopyButton @copy="copyToClickboard(album)" />
+  <div class="flex h-screen items-center">
+    <div class="flex flex-row content-center justify-center">
+      <div class="self-center m-1">
+        <img :src="image" width="150px" height="150px" alt="Song Image" />
+      </div>
+
+      <div class="self-center">
+        <TrackInfo :value="song" />
+        <TrackInfo :value="artist" />
+        <TrackInfo :value="album" />
+      </div>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+
+import { Icon } from '@iconify/vue'
 import TrackInfo from './TrackInfo.vue'
-import CopyButton from './CopyButton.vue'
 export default defineComponent({
   components: {
     TrackInfo,
-    CopyButton,
+    Icon,
   },
   data() {
     return {
       song: '',
       artist: '',
       album: '',
+      image: '',
     }
   },
   methods: {
     // Get the song name, artist and album which have been stored locally after being scraped
     async getTrackFromStorage() {
-      return await chrome.storage.local.get(['songName', 'artist', 'albumName'])
-    },
-
-    // copy field to clipboard
-    copyToClickboard(text: string) {
-      navigator.clipboard.writeText(text).catch((error) => {
-        console.log('error copying: ', error)
-      })
+      return await chrome.storage.local.get([
+        'songName',
+        'artist',
+        'albumName',
+        'image',
+      ])
     },
   },
 
@@ -48,6 +53,7 @@ export default defineComponent({
       this.song = result.songName
       this.artist = result.artist
       this.album = result.albumName
+      this.image = result.image
     })
   },
 })
