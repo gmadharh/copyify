@@ -1,12 +1,7 @@
 <template>
-  <div class="grid gap-4 grid-cols-2 grid-rows-3 items-center justify-center">
-    <TrackInfo :value="song" />
-    <CopyButton @copy="copyToClickboard(song)" />
-    <TrackInfo :value="artist" />
-    <CopyButton @copy="copyToClickboard(artist)" />
-    <TrackInfo :value="album" />
-    <CopyButton @copy="copyToClickboard(album)" />
-  </div>
+  <div
+    class="grid gap-4 grid-cols-2 grid-rows-3 items-center justify-center"
+  ></div>
 </template>
 
 <script lang="ts">
