@@ -9,7 +9,7 @@ This is because it doesn't allow you to highlight any text with the cursor, so t
 
 ## Screenshots
 
-<img width="644" alt="image" src="https://github.com/gmadharh/copyify/assets/58638508/1223c84c-3b4d-4c33-a772-10af11d8dbb8">
+<img src="https://github.com/gmadharh/copyify/assets/58638508/b9325e51-24c5-4dd3-a2ef-167db2f0c381" />
 
 ## Changelog
 
