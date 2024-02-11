@@ -1,7 +1,11 @@
 <template>
   <div
-    class="grid gap-4 grid-cols-2 grid-rows-3 items-center justify-center"
-  ></div>
+    class="flex flex-grow-0 border border-green-400 h-screen w-1/2 content-center justify-center"
+  >
+    <div class="self-center">
+      <img :src="image" width="150px" height="150px" alt="Song Image" />
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
