@@ -1,15 +1,15 @@
 <template>
-  <div
-    class="flex flex-row border border-green-400 content-center justify-center"
-  >
-    <div class="self-center w-screen h-full m-1">
-      <img :src="image" width="150px" height="150px" alt="Song Image" />
-    </div>
+  <div class="flex h-screen items-center">
+    <div class="flex flex-row border content-center justify-center">
+      <div class="self-center m-1">
+        <img :src="image" width="150px" height="150px" alt="Song Image" />
+      </div>
 
-    <div class="border border-l-purple-700 self-center h-full w-screen">
-      <TrackInfo :value="song" />
-      <TrackInfo :value="artist" />
-      <TrackInfo :value="album" />
+      <div class="self-center">
+        <TrackInfo :value="song" />
+        <TrackInfo :value="artist" />
+        <TrackInfo :value="album" />
+      </div>
     </div>
   </div>
 </template>
@@ -17,11 +17,9 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import TrackInfo from './TrackInfo.vue'
-import CopyButton from './CopyButton.vue'
 export default defineComponent({
   components: {
     TrackInfo,
-    CopyButton,
   },
   data() {
     return {
@@ -40,13 +38,6 @@ export default defineComponent({
         'albumName',
         'image',
       ])
-    },
-
-    // copy field to clipboard
-    copyToClickboard(text: string) {
-      navigator.clipboard.writeText(text).catch((error) => {
-        console.log('error copying: ', error)
-      })
     },
   },
 

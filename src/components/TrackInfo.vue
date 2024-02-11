@@ -6,14 +6,24 @@
       :value="value"
       readonly
     />
-    <button class="bg-blue-200 mr-1">Copy</button>
+    <button class="bg-blue-200 mr-1" @click="copyToClipboard(value)">
+      Copy
+    </button>
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent } from 'vue'
 
 export default defineComponent({
   props: { value: String },
+  methods: {
+    // copy field to clipboard
+    copyToClipboard(text: string) {
+      navigator.clipboard.writeText(text).catch((error) => {
+        console.log('error copying: ', error)
+      })
+    },
+  },
 })
 </script>
