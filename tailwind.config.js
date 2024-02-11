@@ -6,12 +6,7 @@ export default {
       lora: ['Lora', 'serif'],
       'source-sans': ["'Source Sans 3'", 'sans-serif'],
     },
-    extend: {
-      colors: {
-        darkStart: '#0d0d0d',
-        darkEnd: '#121212',
-      },
-    },
+    extend: {},
   },
   plugins: [],
 }
