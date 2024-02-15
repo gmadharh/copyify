@@ -16,3 +16,14 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     })
   }
 })
+
+chrome.runtime.onInstalled.addListener((details) => {
+  if (details.reason === 'install') {
+    chrome.storage.local.set({
+      songName: 'Go to Spotify song page to see the track info here!',
+      artist: 'Artist Name',
+      albumName: 'Album Name',
+      image: 'https://picsum.photos/150',
+    })
+  }
+})
