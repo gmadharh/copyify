@@ -13,7 +13,11 @@ This is because it doesn't allow you to highlight any text with the cursor, so t
 
 ## Changelog
 
-### v1.3 (TBR)
+### v1.4 (TBR)
+
+- Fixed on fresh install, populate with default values and image  [#7](https://github.com/gmadharh/copyify/issues/7)
+
+### v1.3
 
 - Major change to UI, looks cleaner, added dynamic buttons for copy pasting, added song image, smaller popup
 
