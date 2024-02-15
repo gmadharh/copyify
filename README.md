@@ -7,7 +7,7 @@ This is because it doesn't allow you to highlight any text with the cursor, so t
 
 [Link](https://chromewebstore.google.com/detail/spotify-song-extractor/mnaooedpbbimbgcjlfebmkomloakbeag?hl=en&authuser=2)
 
-## Screenshots
+## Demo
 
 <img src="https://github.com/gmadharh/copyify/assets/58638508/b9325e51-24c5-4dd3-a2ef-167db2f0c381" />
 
