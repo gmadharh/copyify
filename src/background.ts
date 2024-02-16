@@ -17,6 +17,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   }
 })
 
+// On first install, set default values for song data
 chrome.runtime.onInstalled.addListener((details) => {
   if (details.reason === 'install') {
     chrome.storage.local.set({
