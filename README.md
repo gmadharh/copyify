@@ -13,7 +13,7 @@ This is because it doesn't allow you to highlight any text with the cursor, so t
 
 ## Changelog
 
-### v1.4 (TBR)
+### v1.4
 
 - Fixed on fresh install, populate with default values and image  [#7](https://github.com/gmadharh/copyify/issues/7)
 
