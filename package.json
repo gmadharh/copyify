@@ -4,8 +4,8 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel watch --host localhost",
-    "build": "parcel build"
+    "start": "parcel watch --host localhost --config @parcel/config-webextension",
+    "build": "parcel build --config @parcel/config-webextension"
   },
   "source": [
     "src/script.ts",
