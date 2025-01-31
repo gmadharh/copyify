@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Copyify",
+
+  "version": "1.4",
+  "description": "Easily copy and paste the song title, album, or artist from the Spotify track webpage",
+  "icons": {
+    "128": "./src/assets/icon.png"
+  },
+  "background": {
+    "scripts": ["src/background.ts"]
+  },
+  "action": {
+    "default_popup": "src/popup.html"
+  },
+  "host_permissions": [
+    "http://open.spotify.com/track/*",
+    "https://open.spotify.com/track/*"
+  ],
+  "permissions": ["storage", "scripting", "activeTab"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{e3dbc4ac-7eaf-4c5d-afc3-3f01fbf2d584}"
+    }
+  }
+}

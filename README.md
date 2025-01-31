@@ -1,5 +1,6 @@
 ![icon](https://github.com/gmadharh/spotify-song-extractor/assets/58638508/32a0ab9f-18ed-4b26-921a-397a4671f63b)
- # Copyify
+
+# Copyify
 
 A chrome extension to easily copy and paste the song name, album, or artist from a Spotify song web page.
 
@@ -11,17 +12,25 @@ This is because it doesn't allow you to highlight any text with the cursor, so t
 
 <img src="https://github.com/gmadharh/copyify/assets/58638508/b9325e51-24c5-4dd3-a2ef-167db2f0c381" />
 
+## Build Instructions
+
+1. Be in root folder `pwd ~/**/copyify`
+2. Ensure you have nvm and Nodejs installed and run `nvm install` to use the correct node version
+3. Move `manifest.json` from `chrome` or `firefox` folder into root directory depending on which browser you want to build for'
+4. Run `npm i` to install all required packages
+5. Run `npm run build` to build extension, output will be in the `dist` folder
+
 ## Changelog
 
 ### v1.4
 
-- Fixed on fresh install, populate with default values and image  [#7](https://github.com/gmadharh/copyify/issues/7)
+- Fixed on fresh install, populate with default values and image [#7](https://github.com/gmadharh/copyify/issues/7)
 
 ### v1.3
 
 - Major change to UI, looks cleaner, added dynamic buttons for copy pasting, added song image, smaller popup
 
-### v1.2 
+### v1.2
 
 - Changed name of extension to Copyify (so much better)
 
@@ -32,13 +41,10 @@ This is because it doesn't allow you to highlight any text with the cursor, so t
 - Removed `tabs` permission, opting in for `activeTab`
 - Remove `content_scripts` field in manifest, executing script programatically using `scripting`
 
-### v1.0 
+### v1.0
 
 Initial Release
-
 
 ## Tools Used
 
 Typescript, Vue.js, Tailwind, Parcel
-
-
