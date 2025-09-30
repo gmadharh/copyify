@@ -2,8 +2,8 @@
   "manifest_version": 3,
   "name": "Copyify",
 
-  "version": "1.5",
-  "description": "Easily copy and paste the song title, album, or artist from the Spotify track webpage",
+  "version": "2.0",
+  "description": "Easily copy and paste the song title, album, or artist directly from the Spotify track webpage with one-click copy buttons",
   "icons": {
     "128": "./src/assets/icon.png"
   },
@@ -11,12 +11,9 @@
     "service_worker": "src/background.ts",
     "type": "module"
   },
-  "action": {
-    "default_popup": "src/popup.html"
-  },
   "host_permissions": [
     "http://open.spotify.com/track/*",
     "https://open.spotify.com/track/*"
   ],
-  "permissions": ["storage", "scripting", "activeTab"]
+  "permissions": ["scripting", "activeTab"]
 }

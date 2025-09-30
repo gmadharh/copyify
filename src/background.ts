@@ -8,23 +8,11 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     (tab.url?.startsWith('http://open.spotify.com/track/') ||
       tab.url?.startsWith('https://open.spotify.com/track/'))
   ) {
-    // Execute script to scrape song data if on a track webpage
-    console.log('executing script')
+    // Execute script to inject copy buttons on the Spotify track page
+    console.log('Injecting Copyify buttons')
     chrome.scripting.executeScript({
       target: { tabId: tabId },
       files: ['src/script.js'],
-    })
-  }
-})
-
-// On first install, set default values for song data
-chrome.runtime.onInstalled.addListener((details) => {
-  if (details.reason === 'install') {
-    chrome.storage.local.set({
-      songName: 'Go to Spotify song page to see the track info here!',
-      artist: 'Artist Name',
-      albumName: 'Album Name',
-      image: 'https://picsum.photos/150',
     })
   }
 })
