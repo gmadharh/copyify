@@ -4,7 +4,7 @@ A lightweight browser extension that adds one-click copy buttons directly on Spo
 
 Spotify doesn't let you highlight or select text on track pages. Copyify solves this by injecting small, elegant copy buttons right next to the song name, artist, and album — no popup needed, just instant copying!
 
-<img width="1280" height="800" alt="New Project(2)" src="https://github.com/user-attachments/assets/e769a2fd-a620-4f52-9f85-a4ed7410d6d6" />
+<img width="1352" height="369" alt="Screenshot 2025-09-30 at 12 58 11 PM" src="https://github.com/user-attachments/assets/33f94e22-dfd2-49f8-8d70-f5cf5ceda17d" />
 
 ## ✨ v2.0 Features
 
