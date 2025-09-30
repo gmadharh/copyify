@@ -92,20 +92,13 @@ function injectCopyButtons() {
     const artist = artistElement.textContent ?? ''
     const albumName = albumElement.textContent ?? ''
     
-    // Create a wrapper for song name + button
+    // Insert button after song name without restructuring DOM
     if (!songNameElement.parentElement?.querySelector('.copyify-btn')) {
       const songButton = createCopyButton(songName)
       songButton.title = 'Copy song name'
       
       // Insert button after song name
-      const songParent = songNameElement.parentElement
-      if (songParent) {
-        const wrapper = document.createElement('span')
-        wrapper.style.cssText = 'display: inline-flex; align-items: center;'
-        songNameElement.parentNode?.insertBefore(wrapper, songNameElement)
-        wrapper.appendChild(songNameElement)
-        wrapper.appendChild(songButton)
-      }
+      songNameElement.parentNode?.insertBefore(songButton, songNameElement.nextSibling)
     }
     
     // Create a wrapper for artist + button
