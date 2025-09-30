@@ -1,20 +1,30 @@
 # Copyify
 
-A Browser extension to easily copy and paste the song name, album, or artist from a Spotify song web page.
+A lightweight browser extension that adds one-click copy buttons directly on Spotify track pages.
 
-This is because it doesn't allow you to highlight any text with the cursor, so this makes it easy by automatically extracting the details and a button to copy it to the clipboard
+Spotify doesn't let you highlight or select text on track pages. Copyify solves this by injecting small, elegant copy buttons right next to the song name, artist, and album — no popup needed, just instant copying!
 
-[Chrome](https://chromewebstore.google.com/detail/spotify-song-extractor/mnaooedpbbimbgcjlfebmkomloakbeag?hl=en&authuser=2)
-[Firefox](https://addons.mozilla.org/en-US/firefox/addon/copyify/)
+## ✨ v2.0 Features
 
-## Demo
+- 🎯 **Inline Copy Buttons** - Buttons appear directly next to track info on the page
+- ⚡ **One-Click Copy** - Click any button to instantly copy song, artist, or album name
+- ✅ **Visual Feedback** - Green checkmark confirmation when text is copied
+- 🪶 **Super Lightweight** - Rebuilt without Vue/React, pure TypeScript for speed
+- 🎨 **Seamless Design** - Buttons blend naturally with Spotify's dark theme
 
-<img src="https://github.com/gmadharh/copyify/assets/58638508/b9325e51-24c5-4dd3-a2ef-167db2f0c381" />
+[Chrome Web Store](https://chromewebstore.google.com/detail/spotify-song-extractor/mnaooedpbbimbgcjlfebmkomloakbeag?hl=en&authuser=2) | [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/copyify/)
 
 ## Build Instructions
 
-1. Be in root folder `pwd ~/**/copyify`
-2. Ensure you have nvm and Nodejs installed and run `nvm install` to use the correct node version
-3. Move `manifest.json` from `chrome` or `firefox` folder into root directory depending on which browser you want to build for'
-4. Run `npm i` to install all required packages
-5. Run `npm run build` to build extension, output will be in the `dist` folder
+1. Navigate to the project folder: `cd ~/path/to/copyify`
+2. Install dependencies: `npm install`
+3. Copy the appropriate manifest:
+   - Chrome: `cp chrome/manifest.json manifest.json`
+   - Firefox: `cp firefox/manifest.json manifest.json`
+4. Build the extension: `npm run build`
+5. Output will be in the `dist/` folder
+
+### Loading for Development
+
+- **Chrome**: Go to `chrome://extensions/`, enable Developer Mode, click "Load unpacked", select `dist/` folder
+- **Firefox**: Go to `about:debugging#/runtime/this-firefox`, click "Load Temporary Add-on", select `dist/manifest.json`
